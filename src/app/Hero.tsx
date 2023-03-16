@@ -5,6 +5,7 @@ import logo from "./assets/ipl.png";
 function Hero() {
   return (
     <div className="text-white h-screen bg-center bg-cover bg-no-repeat custom-img  mt-[-55px] section">
+      <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
       <div className="">
         <div
           className="relative max-w-[800px] mt-0 w-full h-screen mx-auto text-center flex flex-col justify-center"
