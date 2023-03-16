@@ -11,7 +11,7 @@ const Timeline = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-9 px-2 py-10">
           <div className="col-span-4 w-full h-full ">
             <div className="w-full h-full p-2 md:pl-4">
-              <h1 className="text-white text-xl py-2 font-extrabold font-bodyFont">8th March Registrations Opens</h1>
+              <h1 className="text-white text-xl py-2 font-extrabold font-bodyFont">Registrations Opens</h1>
               <p className="text-gray-100 sm:text-sm text-xs font-extrabold font-bodyFont">
                 
               </p>
@@ -34,7 +34,7 @@ const Timeline = () => {
           </div>
           <div className="col-span-4 w-full h-full ">
             <div className="w-full h-full p-2 md:pl-4">
-              <h1 className="text-white text-xl py-2 font-extrabold font-bodyFont">24th March Closing of Registrations</h1>
+              <h1 className="text-white text-xl py-2 font-extrabold font-bodyFont">Closing of Registrations</h1>
               <p className="text-gray-100 sm:text-sm text-xs font-extrabold font-bodyFont">
             
               </p>
@@ -43,7 +43,7 @@ const Timeline = () => {
 
           <div className="col-span-4 w-full h-full ">
             <div className="w-full h-full p-2 md:pl-4">
-              <h1 className="text-white text-xl  py-2 font-extrabold font-bodyFont">Signing of MOUs</h1>
+              <h1 className="text-white text-xl  py-2 font-extrabold font-bodyFont">First Round Elimination</h1>
               <p className="text-gray-100 sm:text-sm text-xs font-extrabold font-bodyFont">
                 
               </p>
@@ -66,7 +66,7 @@ const Timeline = () => {
           </div>
           <div className="col-span-4 w-full h-full ">
             <div className="w-full h-full p-2 md:pl-4">
-              <h1 className="text-white text-xl py-2 font-extrabold font-bodyFont">1st & 2nd April Expo LIVE</h1>
+              <h1 className="text-white text-xl py-2 font-extrabold font-bodyFont">Final IPL Auction</h1>
               <p className="text-gray-100 sm:text-sm text-xs font-extrabold font-bodyFont">
                
               </p>

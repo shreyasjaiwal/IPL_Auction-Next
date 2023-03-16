@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useFormik } from "formik";
 import { formschema } from "./schemas";
 
@@ -7,7 +7,7 @@ const initialValues = {
   email: "",
   ph_no: "",
   id_no: "",
-  CollegeName:"",
+  CollegeName: "",
   startup_name: "",
   place: "",
   // cin: "",
@@ -46,7 +46,11 @@ const Form = () => {
       <h1 className="text-2xl text-white sm:text-2xl font-bold text-center py-4 ">
         Participant 1
       </h1>
-      <p className="text-white text-center">The minimum number of participants is 3 , Max is 5 please fill accordingly, Registrations with less than 3 participants will be disqalified</p>
+      <p className="text-white text-center">
+        The minimum number of participants is 2 , Max is 4 please fill
+        accordingly, Registrations with less than 2 participants will be
+        disqalified
+      </p>
       <div className="flex justify-center">
         <form onSubmit={handleSubmit}>
           <div className="max-w-[1240px] mt-10 mx-auto grid md:grid-cols-2 gap-8">
@@ -516,90 +520,15 @@ const Form = () => {
               ) : null}
             </div>
           </div>
-          <h1 className="text-2xl text-white sm:text-2xl font-bold text-center py-4  ">
-            Participant 5
-          </h1>
 
-          <div className="max-w-[1240px] mt-10 mx-auto grid md:grid-cols-2 gap-8">
-            <div className="flex flex-col ">
-              <label htmlFor="name" className="text-gray-500 font-bold">
-                Full Name*
-              </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                value={values.name}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                className="bg-gray-200 sm:w-[400px] appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white"
-              />
-              {errors.name && touched.name ? (
-                <p className="text-sm text-red-600">{errors.name}</p>
-              ) : null}
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="email" className="text-gray-500 font-bold">
-                Email*
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                value={values.email}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                className="bg-gray-200 sm:w-[400px] appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white"
-              />
-              {errors.email && touched.email ? (
-                <p className="text-sm text-red-600">{errors.email}</p>
-              ) : null}
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="ph_no" className="text-gray-500 font-bold">
-                Contact Number*
-              </label>
-              <input
-                type="tel"
-                name="ph_no"
-                id="ph_no"
-                value={values.ph_no}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                className="bg-gray-200 sm:w-[400px] appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white"
-              />
-              {errors.ph_no && touched.ph_no ? (
-                <p className="text-sm text-red-600">{errors.ph_no}</p>
-              ) : null}
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="id_no" className="text-gray-500 font-bold">
-                College Name
-              </label>
-              <input
-                type="tel"
-                name="id_no"
-                id="id_no"
-                value={values.id_no}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                className="bg-gray-200 sm:w-[400px] appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white"
-              />
-              {errors.id_no && touched.id_no ? (
-                <p className="text-sm text-red-600">{errors.id_no}</p>
-              ) : null}
-            </div>
-          </div>
-        
           <div className="flex items-center">
             <button
               type="submit"
-              className="text-white w-[200px] rounded-md font-medium my-8 mx-auto  py-3 bg-gray-500 hover:scale-105 hover:bg-red-500 hover:text-white  duration-200"
+              className="text-white w-[200px] rounded-md font-medium my-8 mx-auto  py-3 bg-gray-500 hover:scale-105 hover:bg-[#f4cb33] hover:text-white  duration-200"
             >
               Submit
             </button>
           </div>
-          
         </form>
       </div>
     </div>
